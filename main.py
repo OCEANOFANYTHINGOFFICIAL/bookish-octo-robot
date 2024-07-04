@@ -12,7 +12,6 @@ for i in range(1, 365):
             f.write(d + '\n')
         os.system("git add .")
         commit_command = f"git commit --date=\"{d}\" -m 'commit'"
-        print(commit_command)  # Print the commit command for debugging
         os.system(commit_command)
 
 os.system("git push origin main")
